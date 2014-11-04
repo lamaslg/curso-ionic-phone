@@ -1,0 +1,27 @@
+<ion-view title="Mi app - Inicio de sesión">
+    <ion-content ng->
+              <div class="list">
+                <label class="item item-input">
+                    <span class="input-label">Email</span>
+                    <input type="text" ng-model="user.login">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="password" ng-model="user.password">
+                </label>
+                <label class="item">
+                    <button class="button button-block button-positive" type="button" ng-click="signIn()" >Iniciar sesión</button>
+                </label>
+                <label class="item">
+                    <button class="button button-block button-positive" type="button" ui-sref="noLogin.registro">Registrate</button>
+                </label>
+
+            </div>
+
+
+    </ion-content>
+    <ion-footer-bar align-title="center" class="bar-calm">
+        <h1 class="title">Soy el pie</h1>
+    </ion-footer-bar>
+
+</ion-view>
